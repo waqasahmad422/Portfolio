@@ -663,9 +663,6 @@ h3.my-profession {
 
 /* Responsive ness  */
 @media (max-width: 1199px) {
-  .home{
-    padding-top: 10px;
-  }
   .section .container {
     padding-top: 70px;
   }
