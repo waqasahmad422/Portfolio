@@ -272,7 +272,7 @@ ul {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
-  padding-top: 120px;
+  padding-top: 70px;
 }
 .home .home-info {
   flex: 0 0 60%;
@@ -327,7 +327,10 @@ h3.my-profession {
   top: -40px;
 }
 .home .home-img img {
-  margin: auto;
+  width: 85%;
+  /* margin: auto; */
+  margin-left: -40px;
+
   border-radius: 5px;
   height: 400px;
 }
