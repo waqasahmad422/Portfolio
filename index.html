@@ -7,11 +7,48 @@
     <title>Document</title>
     <!--===== CSS File ====== -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/skins/color-1.css" />
+    <link rel="stylesheet" href="./css/skins/color-2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <!-- ===== Style switcher ===== -->
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/style-switcher.css" />
   </head>
   <body>
     <!-- ====== Main Container Start ====== -->
@@ -26,19 +63,19 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i> About</a>
+            <a href="#about"><i class="fa fa-user"></i> About</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i> Services</a>
+            <a href="#services"><i class="fa fa-list"></i> Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-briefcase"></i> Portfolio</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comments"></i> Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
           </li>
         </ul>
       </div>
@@ -46,7 +83,7 @@
       <!-- ====== Main Content Start ====== -->
       <div class="main-content">
         <!-- ====== Home Section Start ====== -->
-        <section class="home section">
+        <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -54,14 +91,14 @@
                   Hello, my name is <span class="name">Waqas Ahmad</span>
                 </h3>
                 <h3 class="my-profession">
-                  I' am a <span class="typing">Web Developer</span>
+                  I' am a <span class="typing"></span>
                 </h3>
                 <p>
                   I am web developer with extensive fresher Lorem ipsum dolor
                   sit amet consectetur adipisicing elit. Consectetur adipisci
                   eos aut sequi deleniti. .
                 </p>
-                <a href="#contact" class="btn hire-me">Hire Me</a>
+                <a href="#" class="btn">Download CV</a>
               </div>
               <div class="home-img padd-15">
                 <img src="./images/IMG-20220830-WA0012.jpg" alt="" />
@@ -72,7 +109,7 @@
         <!-- ====== Home Section End ====== -->
 
         <!-- ====== About Section Start ====== -->
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -124,8 +161,12 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#" class="btn">Download CV</a>
-                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                        <a
+                          href="#contact"
+                          data-section-index="1"
+                          class="btn hire-me"
+                          >Hire Me</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -250,7 +291,7 @@
         </section>
         <!-- ====== About Section End ====== -->
         <!-- ====== Services Section start ====== -->
-        <section class="service section">
+        <section class="service section" id="services">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -347,7 +388,7 @@
         </section>
         <!-- ====== Services Section End ====== -->
         <!-- ====== Portfolio Section Start ====== -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -437,7 +478,7 @@
         </section>
         <!-- ====== Portfolio Section End ====== -->
         <!-- ====== Contact Section Start ====== -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -521,7 +562,12 @@
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <textarea class="form-control" name="" id="" placeholder="Message"></textarea>
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id=""
+                        placeholder="Message"
+                      ></textarea>
                     </div>
                   </div>
                 </div>
@@ -540,7 +586,33 @@
     </div>
     <!-- ====== Main Container end ====== -->
 
+    <!-- ====== Style Switcher Start ======  -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- ====== Style Switcher End ======  -->
+
     <!-- ====== script File ====== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
   </body>
 </html>
