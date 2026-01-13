@@ -40,6 +40,10 @@
 .style-switcher .day-night{
     top: 55px;
 }
+.style-switcher .whattsapp{
+    color: #0CC143;
+    top: 110px;
+}
 .style-switcher h4{
     margin: 0 0 1px;
     color: var(--text-black-700);
@@ -75,3 +79,5 @@
 .style-switcher .color-5{
     background: #f021b2;
 }
+
+
