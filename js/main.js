@@ -23,7 +23,7 @@
   };
 
   /* ---------- 2. Section navigation ------------------------------------- */
-  const SITE_NAME = "Waqas Ahmad Shah";
+  const SITE_NAME = "Aspiring Full-Stack Developer";
   const sections = $$(".section");
   const navLinks = $$(".nav a");
   let current = sections.find((s) => s.classList.contains("active")) || sections[0];
@@ -99,7 +99,7 @@
       else a.removeAttribute("aria-current");
     });
 
-    document.title = id === "home" ? `${SITE_NAME} — Frontend Web Developer` : `${next.dataset.title} — ${SITE_NAME}`;
+    document.title = id === "home" ? `${SITE_NAME} — Aspiring Full-Stack Developer` : `${next.dataset.title} — ${SITE_NAME}`;
     // Move focus to the section heading: it is announced by screen readers and shows a small ring, not a panel-wide one.
     if (focus) headingOf(next)?.focus({ preventScroll: true });
     closeMenu();

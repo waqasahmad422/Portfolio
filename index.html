@@ -1,32 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waqas Ahmad Shah — Frontend Web Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Aspiring Full-Stack Developer
+    </title>
     <meta
       name="description"
-      content="Waqas Ahmad Shah is a frontend web developer from Peshawar, Pakistan. He builds responsive websites with HTML, CSS and JavaScript, and full-stack apps with PHP and MySQL. See his projects and get in touch.">
-    <meta name="author" content="Waqas Ahmad Shah">
-    <meta name="theme-color" content="#f2f2fc">
-    <link rel="canonical" href="https://waqasahmadshah.vercel.app/">
+      content="Frontend web developer and aspiring full-stack developer from Peshawar, Pakistan. Responsive websites with HTML, CSS and JavaScript, and PHP and MySQL apps. See his projects and get in touch."
+    />
+    <meta name="author" content="Waqas Ahmad Shah" />
+    <meta name="theme-color" content="#f2f2fc" />
+    <link rel="canonical" href="https://waqasahmadshah.vercel.app/" />
 
     <!-- Social previews -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Waqas Ahmad Shah">
-    <meta property="og:title" content="Waqas Ahmad Shah — Frontend Web Developer">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Waqas Ahmad Shah" />
+    <meta
+      property="og:title"
+      content="Waqas Ahmad Shah — Frontend &amp; Aspiring Full-Stack Developer"
+    />
     <meta
       property="og:description"
-      content="Responsive websites and full-stack web apps. Browse my projects, download my CV, or get in touch.">
-    <meta property="og:url" content="https://waqasahmadshah.vercel.app/">
-    <meta property="og:image" content="https://waqasahmadshah.vercel.app/images/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
+      content="Frontend web developer growing into full-stack. Responsive websites, PHP and MySQL apps, and a learning path through Laravel."
+    />
+    <meta property="og:url" content="https://waqasahmadshah.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://waqasahmadshah.vercel.app/images/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Icons -->
-    <link rel="icon" href="./images/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
 
     <!-- Apply saved theme before first paint (prevents a light/dark flash) -->
     <script>
@@ -35,26 +45,47 @@
           var d = document.documentElement;
           var theme = localStorage.getItem("theme");
           var skin = localStorage.getItem("skin");
-          if (!theme) theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          if (!theme)
+            theme = matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
           d.dataset.theme = theme;
           if (skin) d.dataset.skin = skin;
         } catch (e) {}
       })();
     </script>
 
-    <link rel="preload" href="./fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="preload"
+      href="./fonts/plus-jakarta-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Waqas Ahmad Shah",
-        "jobTitle": "Frontend Web Developer",
+        "jobTitle": "Frontend Web Developer (aspiring Full-Stack Developer)",
+        "knowsAbout": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap",
+          "PHP",
+          "MySQL"
+        ],
         "url": "https://waqasahmadshah.vercel.app/",
         "image": "https://waqasahmadshah.vercel.app/images/waqas-800.webp",
         "alumniOf": "University of Peshawar",
-        "address": { "@type": "PostalAddress", "addressLocality": "Peshawar", "addressCountry": "PK" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Peshawar",
+          "addressCountry": "PK"
+        },
         "sameAs": [
           "https://github.com/waqasahmad422",
           "https://www.linkedin.com/in/waqas-ahmad-shah/"
@@ -63,9 +94,20 @@
     </script>
     <noscript>
       <style>
-        .aside, .nav-toggler, .switcher { display: none; }
-        .project-media img { opacity: 1; }
-        .section { position: static; visibility: visible; padding: 0 30px; min-height: 0; }
+        .aside,
+        .nav-toggler,
+        .switcher {
+          display: none;
+        }
+        .project-media img {
+          opacity: 1;
+        }
+        .section {
+          position: static;
+          visibility: visible;
+          padding: 0 30px;
+          min-height: 0;
+        }
       </style>
     </noscript>
   </head>
@@ -75,36 +117,382 @@
     <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <div class="scrim" aria-hidden="true"></div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-<symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></g></symbol>
-<symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></g></symbol>
-<symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></g></symbol>
-<symbol id="i-briefcase" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></g></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></g></symbol>
-<symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></g></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></g></symbol>
-<symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></g></symbol>
-<symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v3" /> <path d="M16 2v3" /> <rect x="3" y="3" width="18" height="18" rx="2" /> <path d="M3 9h18" /></g></symbol>
-<symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /></g></symbol>
-<symbol id="i-moon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></g></symbol>
-<symbol id="i-cog" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /> <circle cx="12" cy="12" r="3" /></g></symbol>
-<symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /> <path d="M12 18h.01" /></g></symbol>
-<symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="4" rx="2" ry="2" /> <line x1="2" x2="22" y1="20" y2="20" /></g></symbol>
-<symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /> <path d="m6 8-4 4 4 4" /> <path d="m14.5 4-5 16" /></g></symbol>
-<symbol id="i-gauge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4" /> <path d="M3.34 19a10 10 0 1 1 17.32 0" /></g></symbol>
-<symbol id="i-wrench" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /></g></symbol>
-<symbol id="i-palette" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" /> <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /> <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /> <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /> <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /></g></symbol>
-<symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /> <path d="M10 14 21 3" /> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></g></symbol>
-<symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" /> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <path d="m7 10 5 5 5-5" /></g></symbol>
-<symbol id="i-send" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /> <path d="m21.854 2.147-10.94 10.939" /></g></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></g></symbol>
-<symbol id="i-grad" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></g></symbol>
-<symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></g></symbol>
-<symbol id="i-github-alt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 19a5 5 0 0 1-5-5v8" /> <path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5" /> <circle cx="13" cy="12" r="2" /> <circle cx="20" cy="19" r="2" /></g></symbol>
-<symbol id="i-github" viewBox="0 0 24 24"><g fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></g></symbol>
-<symbol id="i-whatsapp" viewBox="0 0 24 24"><g fill="currentColor"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></g></symbol>
-<symbol id="i-linkedin" viewBox="0 0 16 16"><g fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></g></symbol>
-</svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="i-home" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </g>
+      </symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+          />
+          <path
+            d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"
+          />
+          <path
+            d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          <rect width="20" height="14" x="2" y="6" rx="2" />
+        </g>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+        </g>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+          />
+          <circle cx="12" cy="10" r="3" />
+        </g>
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+          <path d="M2 12h20" />
+        </g>
+      </symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M8 2v3" />
+          <path d="M16 2v3" />
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M3 9h18" />
+        </g>
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.93 4.93 1.41 1.41" />
+          <path d="m17.66 17.66 1.41 1.41" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.34 17.66-1.41 1.41" />
+          <path d="m19.07 4.93-1.41 1.41" />
+        </g>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-cog" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+          />
+          <circle cx="12" cy="12" r="3" />
+        </g>
+      </symbol>
+      <symbol id="i-mobile" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+          <path d="M12 18h.01" />
+        </g>
+      </symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect width="18" height="12" x="3" y="4" rx="2" ry="2" />
+          <line x1="2" x2="22" y1="20" y2="20" />
+        </g>
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m18 16 4-4-4-4" />
+          <path d="m6 8-4 4 4 4" />
+          <path d="m14.5 4-5 16" />
+        </g>
+      </symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m12 14 4-4" />
+          <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+        </g>
+      </symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+          />
+          <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+          <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+          <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+          <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+        </g>
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 3h6v6" />
+          <path d="M10 14 21 3" />
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+        </g>
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 15V3" />
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <path d="m7 10 5 5 5-5" />
+        </g>
+      </symbol>
+      <symbol id="i-send" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          />
+          <path d="m21.854 2.147-10.94 10.939" />
+        </g>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 6 9 17l-5-5" />
+        </g>
+      </symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+          />
+          <path d="M22 10v6" />
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+        </g>
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+          />
+          <circle cx="12" cy="8" r="6" />
+        </g>
+      </symbol>
+      <symbol id="i-github-alt" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 19a5 5 0 0 1-5-5v8" />
+          <path
+            d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"
+          />
+          <circle cx="13" cy="12" r="2" />
+          <circle cx="20" cy="19" r="2" />
+        </g>
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <g fill="currentColor">
+          <title>GitHub</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <g fill="currentColor">
+          <title>WhatsApp</title>
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          />
+        </g>
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 16 16">
+        <g fill="currentColor">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+          />
+        </g>
+      </symbol>
+    </svg>
 
     <!-- ====== Sidebar ====== -->
 
@@ -114,82 +502,207 @@
       </div>
       <nav aria-label="Main">
         <ul class="nav">
-          <li><a href="#home" class="active" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-home" /></svg>Home</a></li>
-          <li><a href="#about"><svg class="icon" aria-hidden="true"><use href="#i-user" /></svg>About</a></li>
-          <li><a href="#services"><svg class="icon" aria-hidden="true"><use href="#i-layers" /></svg>Services</a></li>
-          <li><a href="#portfolio"><svg class="icon" aria-hidden="true"><use href="#i-briefcase" /></svg>Portfolio</a></li>
-          <li><a href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>Contact</a></li>
+          <li>
+            <a href="#home" class="active" aria-current="page"
+              ><svg class="icon" aria-hidden="true"><use href="#i-home" /></svg
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><svg class="icon" aria-hidden="true"><use href="#i-user" /></svg
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#services"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#i-layers" /></svg
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#i-briefcase" /></svg
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
       <div class="aside-social">
-        <a href="https://github.com/waqasahmad422" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github" /></svg></a>
-        <a href="https://www.linkedin.com/in/waqas-ahmad-shah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin" /></svg></a>
-        <a href="mailto:waqasahmad545818@gmail.com" aria-label="Send an email"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg></a>
+        <a
+          href="https://github.com/waqasahmad422"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub (opens in a new tab)"
+          ><svg class="icon" aria-hidden="true"><use href="#i-github" /></svg
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/waqas-ahmad-shah/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn (opens in a new tab)"
+          ><svg class="icon" aria-hidden="true"><use href="#i-linkedin" /></svg
+        ></a>
+        <a href="mailto:waqasahmad545818@gmail.com" aria-label="Send an email"
+          ><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
+        ></a>
       </div>
     </header>
 
     <!-- ====== Menu button, theme / accent / WhatsApp ====== -->
     <div role="region" aria-label="Site controls">
-    <button
-      class="nav-toggler"
-      type="button"
-      aria-label="Toggle navigation menu"
-      aria-controls="sidebar"
-      aria-expanded="false"
-    >
-      <span></span>
-    </button>
-    <div class="switcher" id="switcher">
-      <button class="switcher-btn" id="settings-toggle" type="button" aria-label="Appearance settings" aria-expanded="false" aria-controls="switcher-panel">
-        <svg class="icon" aria-hidden="true"><use href="#i-cog" /></svg>
-      </button>
-      <button class="switcher-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
-        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon" /></svg>
-        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun" /></svg>
-      </button>
-      <a
-        class="switcher-btn switcher-btn--wa"
-        href="https://wa.me/923209955837?text=Hi%20Waqas%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp (opens in a new tab)"
+      <button
+        class="nav-toggler"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-controls="sidebar"
+        aria-expanded="false"
       >
-        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
-      </a>
-      <div class="switcher-panel" id="switcher-panel">
-        <h2 id="accent-label">Accent colour</h2>
-        <div class="swatches" role="radiogroup" aria-labelledby="accent-label">
-          <button class="swatch swatch--red" type="button" role="radio" aria-checked="false" data-skin="red" aria-label="Red"></button>
-          <button class="swatch swatch--orange" type="button" role="radio" aria-checked="true" data-skin="orange" aria-label="Orange"></button>
-          <button class="swatch swatch--green" type="button" role="radio" aria-checked="false" data-skin="green" aria-label="Green"></button>
-          <button class="swatch swatch--blue" type="button" role="radio" aria-checked="false" data-skin="blue" aria-label="Blue"></button>
-          <button class="swatch swatch--pink" type="button" role="radio" aria-checked="false" data-skin="pink" aria-label="Pink"></button>
+        <span></span>
+      </button>
+      <div class="switcher" id="switcher">
+        <button
+          class="switcher-btn"
+          id="settings-toggle"
+          type="button"
+          aria-label="Appearance settings"
+          aria-expanded="false"
+          aria-controls="switcher-panel"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-cog" /></svg>
+        </button>
+        <button
+          class="switcher-btn"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+        >
+          <svg class="icon icon-moon" aria-hidden="true">
+            <use href="#i-moon" />
+          </svg>
+          <svg class="icon icon-sun" aria-hidden="true">
+            <use href="#i-sun" />
+          </svg>
+        </button>
+        <a
+          class="switcher-btn switcher-btn--wa"
+          href="https://wa.me/923209955837?text=Hi%20Waqas%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp (opens in a new tab)"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+        </a>
+        <div class="switcher-panel" id="switcher-panel">
+          <h2 id="accent-label">Accent colour</h2>
+          <div
+            class="swatches"
+            role="radiogroup"
+            aria-labelledby="accent-label"
+          >
+            <button
+              class="swatch swatch--red"
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-skin="red"
+              aria-label="Red"
+            ></button>
+            <button
+              class="swatch swatch--orange"
+              type="button"
+              role="radio"
+              aria-checked="true"
+              data-skin="orange"
+              aria-label="Orange"
+            ></button>
+            <button
+              class="swatch swatch--green"
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-skin="green"
+              aria-label="Green"
+            ></button>
+            <button
+              class="swatch swatch--blue"
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-skin="blue"
+              aria-label="Blue"
+            ></button>
+            <button
+              class="swatch swatch--pink"
+              type="button"
+              role="radio"
+              aria-checked="false"
+              data-skin="pink"
+              aria-label="Pink"
+            ></button>
+          </div>
         </div>
       </div>
     </div>
-    </div>
 
     <main id="main">
-      <h1 class="sr-only">Waqas Ahmad Shah — Frontend Web Developer</h1>
+      <h1 class="sr-only">
+        Waqas Ahmad Shah — Aspiring Full-Stack
+        Developer
+      </h1>
       <!-- ====== Home ====== -->
-      <section class="section home active" id="home" tabindex="0" aria-labelledby="home-title" data-title="Frontend Web Developer">
+      <section
+        class="section home active"
+        id="home"
+        tabindex="0"
+        aria-labelledby="home-title"
+        data-title="Frontend &amp; Aspiring Full-Stack Developer"
+      >
         <div class="container">
           <div class="home-grid">
             <div class="home-info">
               <p class="hello">Hello, my name is</p>
               <h2 class="name" id="home-title">Waqas Ahmad Shah</h2>
               <p class="role">
-                I'm a
-                <span class="typing" aria-hidden="true" data-roles='["Web Developer","Frontend Developer","Web Designer"]'>Web Developer</span><span class="caret" aria-hidden="true"></span>
-                <span class="sr-only">Web developer, frontend developer and web designer</span>
+                I'm
+                <span
+                  class="typing"
+                  aria-hidden="true"
+                  data-roles='["an Aspiring Full-Stack Web Developer","a Frontend Web Developer","a Web Designer"]'
+                  >an Aspiring Full-Stack Developer</span
+                ><span class="caret" aria-hidden="true"></span>
+                <span class="sr-only"
+                  >an aspiring full-stack Web Developer, a Frontend Web Developer, 
+                  and a web designer</span
+                >
               </p>
               <p class="lead">
-                I build responsive, user-friendly websites with modern web technologies, and I enjoy turning ideas into
-                clean, working interfaces.
+                I'm a Web Developer specializing in front-end and back-end
+                development. I build responsive, user-friendly websites and web
+                applications using HTML, CSS, JavaScript, and Bootstrap on the
+                front end, with PHP and MySQL powering the back end. Currently
+                learning Laravel to build more scalable, structured
+                applications.
               </p>
               <div class="actions">
-                <a href="./CV.pdf" class="btn" target="_blank" rel="noopener" download="Waqas-Ahmad-Shah-CV.pdf">
-                  <svg class="icon" aria-hidden="true"><use href="#i-download" /></svg>Download CV
+                <a
+                  href="./CV.pdf"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener"
+                  download="Waqas-Ahmad-Shah-CV.pdf"
+                >
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-download" /></svg
+                  >Download CV
                 </a>
                 <a href="#portfolio" class="btn btn--ghost">See my work</a>
               </div>
@@ -197,43 +710,88 @@
             <div class="portrait">
               <img
                 src="./images/waqas-800.webp"
-                srcset="./images/waqas-480.webp 480w, ./images/waqas-800.webp 800w"
+                srcset="
+                  ./images/waqas-480.webp 480w,
+                  ./images/waqas-800.webp 800w
+                "
                 sizes="(max-width: 991px) 210px, 350px"
                 width="800"
                 height="1000"
                 alt="Portrait of Waqas Ahmad Shah in a dark suit"
                 fetchpriority="high"
-                decoding="async">
+                decoding="async"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!-- ====== About ====== -->
-      <section class="section about" id="about" tabindex="0" aria-labelledby="about-title" data-title="About">
+      <section
+        class="section about"
+        id="about"
+        tabindex="0"
+        aria-labelledby="about-title"
+        data-title="About"
+      >
         <div class="container">
           <div class="section-title"><h2 id="about-title">About Me</h2></div>
 
           <div class="about-intro">
-            <h3>I'm Waqas Ahmad Shah, a <span>web developer</span></h3>
+            <h3>
+              I'm Waqas Ahmad Shah, a <span>Aspiring Full Stack Web Developer</span>
+            </h3>
             <p>
-              I'm a motivated web developer with a strong focus on frontend development using HTML, CSS, JavaScript and
-              Bootstrap. I also have hands-on experience with PHP and MySQL for backend functionality. I'm eager to learn new
-              technologies and grow as a professional developer through real-world projects.
+              I build responsive, user-friendly websites and applications using
+              HTML, CSS, JavaScript, and Bootstrap, with PHP and MySQL for
+              backend development — and I'm currently learning Laravel to grow
+              as a full-stack developer. I enjoy solving real problems through
+              code and exploring how AI can make web development faster and
+              smarter.
             </p>
           </div>
 
           <div class="about-cols">
             <div>
               <dl class="info-list">
-                <div><dt>Birthday</dt><dd>1 Jun 2003</dd></div>
-                <div><dt>Age</dt><dd data-age>22</dd></div>
-                <div><dt>Degree</dt><dd>Computer Science</dd></div>
-                <div><dt>Freelance</dt><dd>Available</dd></div>
-                <div><dt>Email</dt><dd><a href="mailto:waqasahmad545818@gmail.com">waqasahmad545818@gmail.com</a></dd></div>
-                <div><dt>Phone</dt><dd><a href="tel:+923209955837">+92&nbsp;320&nbsp;9955837</a></dd></div>
-                <div><dt>City</dt><dd>Peshawar</dd></div>
-                <div><dt>Country</dt><dd>Pakistan</dd></div>
+                <div>
+                  <dt>Birthday</dt>
+                  <dd>1 Jun 2003</dd>
+                </div>
+                <div>
+                  <dt>Age</dt>
+                  <dd data-age>22</dd>
+                </div>
+                <div>
+                  <dt>Degree</dt>
+                  <dd>Computer Science</dd>
+                </div>
+                <div>
+                  <dt>Freelance</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:waqasahmad545818@gmail.com"
+                      >waqasahmad545818@gmail.com</a
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd>
+                    <a href="tel:+923209955837">+92&nbsp;320&nbsp;9955837</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>City</dt>
+                  <dd>Peshawar</dd>
+                </div>
+                <div>
+                  <dt>Country</dt>
+                  <dd>Pakistan</dd>
+                </div>
               </dl>
               <a href="#contact" class="btn">Hire me</a>
             </div>
@@ -241,34 +799,95 @@
             <div>
               <div class="skills">
                 <div class="skill">
-                  <div class="skill-head"><span>HTML</span><span>90%</span></div>
-                  <div class="skill-bar" role="meter" aria-label="HTML" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span style="--level: 90%"></span></div>
+                  <div class="skill-head">
+                    <span>HTML</span><span>90%</span>
+                  </div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="HTML"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="90"
+                  >
+                    <span style="--level: 90%"></span>
+                  </div>
                 </div>
                 <div class="skill">
                   <div class="skill-head"><span>CSS</span><span>85%</span></div>
-                  <div class="skill-bar" role="meter" aria-label="CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span style="--level: 85%"></span></div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="CSS"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="85"
+                  >
+                    <span style="--level: 85%"></span>
+                  </div>
                 </div>
                 <div class="skill">
-                  <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
-                  <div class="skill-bar" role="meter" aria-label="JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span style="--level: 75%"></span></div>
+                  <div class="skill-head"><span>Bootstrap</span><span>80%</span></div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="Bootstrap"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="80"
+                  >
+                    <span style="--level: 80%"></span>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-head">
+                    <span>JavaScript</span><span>75%</span>
+                  </div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="JavaScript"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="75"
+                  >
+                    <span style="--level: 75%"></span>
+                  </div>
                 </div>
                 <div class="skill">
                   <div class="skill-head"><span>PHP</span><span>60%</span></div>
-                  <div class="skill-bar" role="meter" aria-label="PHP" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span style="--level: 60%"></span></div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="PHP"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="60"
+                  >
+                    <span style="--level: 60%"></span>
+                  </div>
                 </div>
                 <div class="skill">
-                  <div class="skill-head"><span>MySQL</span><span>50%</span></div>
-                  <div class="skill-bar" role="meter" aria-label="MySQL" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span style="--level: 50%"></span></div>
+                  <div class="skill-head">
+                    <span>MySQL</span><span>50%</span>
+                  </div>
+                  <div
+                    class="skill-bar"
+                    role="meter"
+                    aria-label="MySQL"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="50"
+                  >
+                    <span style="--level: 50%"></span>
+                  </div>
                 </div>
               </div>
               <div class="learning">
-                <h4>Currently learning</h4>
+                <h4>Full-stack learning path</h4>
                 <ul class="chips">
-                  <li>React.js</li>
-                  <li>Tailwind CSS</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>MongoDB</li>
+                  <li>Laravel</li>
                 </ul>
               </div>
             </div>
@@ -279,28 +898,45 @@
               <h3 class="sub-heading">Education</h3>
               <div class="timeline">
                 <div class="timeline-item">
-                  <p class="timeline-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>2021 – 2025</p>
+                  <p class="timeline-date">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-calendar" /></svg
+                    >2021 – 2025
+                  </p>
                   <h4 class="timeline-title">BS Computer Science</h4>
                   <p>
-                    Completed my BS in Computer Science at the University of Peshawar, building a strong foundation in
-                    programming, web technologies, databases and software engineering. Academic projects sharpened my
-                    problem-solving and gave me practical frontend and backend experience.
+                    Completed my BS in Computer Science at the University of
+                    Peshawar, building a strong foundation in programming, web
+                    technologies, databases and software engineering. Academic
+                    projects sharpened my problem-solving and gave me practical
+                    frontend and backend experience.
                   </p>
                 </div>
                 <div class="timeline-item">
-                  <p class="timeline-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>2019 – 2021</p>
+                  <p class="timeline-date">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-calendar" /></svg
+                    >2019 – 2021
+                  </p>
                   <h4 class="timeline-title">FSc Computer Science</h4>
                   <p>
-                    Completed my FSc in Computer Science at Government Degree College Shabqadar, District Charsadda,
-                    studying computer science and mathematics, which built the fundamentals of computing and programming.
+                    Completed my FSc in Computer Science at Government Degree
+                    College Shabqadar, District Charsadda, studying computer
+                    science and mathematics, which built the fundamentals of
+                    computing and programming.
                   </p>
                 </div>
                 <div class="timeline-item">
-                  <p class="timeline-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>2017 – 2019</p>
+                  <p class="timeline-date">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-calendar" /></svg
+                    >2017 – 2019
+                  </p>
                   <h4 class="timeline-title">Matric in Science</h4>
                   <p>
-                    Completed my Matric in Science at Adil Educare Model School, Shabqadar, where I studied the core
-                    science subjects and built a strong academic foundation.
+                    Completed my Matric in Science at Adil Educare Model School,
+                    Shabqadar, where I studied the core science subjects and
+                    built a strong academic foundation.
                   </p>
                 </div>
               </div>
@@ -310,20 +946,32 @@
               <h3 class="sub-heading">Certifications</h3>
               <div class="timeline">
                 <div class="timeline-item">
-                  <p class="timeline-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>Dec 2024 – Feb 2025</p>
+                  <p class="timeline-date">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-calendar" /></svg
+                    >Dec 2024 – Feb 2025
+                  </p>
                   <h4 class="timeline-title">Web Development</h4>
                   <p>
-                    Professional web development training at Arfa Karim Technology Incubator, Peshawar, with hands-on
-                    practice in HTML, CSS, JavaScript, Bootstrap, PHP and MySQL.
+                    Professional web development training at Arfa Karim
+                    Technology Incubator, Peshawar, with hands-on practice in
+                    HTML, CSS, JavaScript, Bootstrap, PHP and MySQL.
                   </p>
                 </div>
                 <div class="timeline-item">
-                  <p class="timeline-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>Sep 2025 – Nov 2025</p>
+                  <p class="timeline-date">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-calendar" /></svg
+                    >Sep 2025 – Nov 2025
+                  </p>
                   <h4 class="timeline-title">Advanced Web Development</h4>
                   <p>
-                    Advanced Web Development certification from the National Vocational and Technical Training Commission
-                    (NAVTTC), covering React.js, TypeScript, Firebase, Node.js, Express.js and MongoDB. It strengthened my
-                    frontend and backend skills and my ability to build responsive, dynamic web applications.
+                    Advanced Web Development certification from the National
+                    Vocational and Technical Training Commission (NAVTTC),
+                    covering React.js, TypeScript, Firebase, Node.js, Express.js
+                    and MongoDB. It strengthened my frontend and backend skills
+                    and my ability to build responsive, dynamic web
+                    applications.
                   </p>
                 </div>
               </div>
@@ -333,74 +981,175 @@
       </section>
 
       <!-- ====== Services ====== -->
-      <section class="section services-section" id="services" tabindex="0" aria-labelledby="services-title" data-title="Services">
+      <section
+        class="section services-section"
+        id="services"
+        tabindex="0"
+        aria-labelledby="services-title"
+        data-title="Services"
+      >
         <div class="container">
           <div class="section-title"><h2 id="services-title">Services</h2></div>
           <div class="services">
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-mobile" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-mobile" />
+                </svg>
+              </div>
               <h3>Responsive Web Design</h3>
-              <p>Mobile-friendly websites that work smoothly on every screen size, built with HTML, CSS and Bootstrap.</p>
+              <p>
+                Mobile-friendly websites that work smoothly on every screen
+                size, built with HTML, CSS and Bootstrap.
+              </p>
             </article>
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-laptop" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-laptop" />
+                </svg>
+              </div>
               <h3>Frontend Development</h3>
-              <p>Clean, well-structured interfaces in HTML, CSS and JavaScript, with a focus on usability and performance.</p>
+              <p>
+                Clean, well-structured interfaces in HTML, CSS and JavaScript,
+                with a focus on usability and performance.
+              </p>
             </article>
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-code" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-code" />
+                </svg>
+              </div>
               <h3>Web Development</h3>
-              <p>Static and dynamic websites using modern web technologies, with basic backend integration in PHP and MySQL.</p>
+              <p>
+                Static and dynamic websites with backend integration in PHP and
+                MySQL, and full-stack skills growing with Node.js and MongoDB.
+              </p>
             </article>
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-palette" />
+                </svg>
+              </div>
               <h3>Design to Code</h3>
-              <p>I turn a design or reference site into a pixel-careful, responsive page you can launch.</p>
+              <p>
+                I turn a design or reference site into a pixel-careful,
+                responsive page you can launch.
+              </p>
             </article>
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-gauge" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-gauge" />
+                </svg>
+              </div>
               <h3>Website Optimization</h3>
-              <p>Faster load times, better responsiveness and basic SEO practices to improve how your site performs.</p>
+              <p>
+                Faster load times, better responsiveness and basic SEO practices
+                to improve how your site performs.
+              </p>
             </article>
             <article class="service-card">
-              <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench" /></svg></div>
+              <div class="service-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-wrench" />
+                </svg>
+              </div>
               <h3>Website Support</h3>
-              <p>Content updates, bug fixes and small improvements to keep your website running smoothly.</p>
+              <p>
+                Content updates, bug fixes and small improvements to keep your
+                website running smoothly.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
       <!-- ====== Portfolio ====== -->
-      <section class="section portfolio" id="portfolio" tabindex="0" aria-labelledby="portfolio-title" data-title="Portfolio">
+      <section
+        class="section portfolio"
+        id="portfolio"
+        tabindex="0"
+        aria-labelledby="portfolio-title"
+        data-title="Portfolio"
+      >
         <div class="container">
-          <div class="section-title"><h2 id="portfolio-title">Portfolio</h2></div>
+          <div class="section-title">
+            <h2 id="portfolio-title">Portfolio</h2>
+          </div>
           <h3 class="sub-heading">My latest projects</h3>
 
           <div class="filters" role="group" aria-label="Filter projects">
-            <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
-            <button class="filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+            <button
+              class="filter"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              class="filter"
+              type="button"
+              data-filter="fullstack"
+              aria-pressed="false"
+            >
+              Full-stack
+            </button>
+            <button
+              class="filter"
+              type="button"
+              data-filter="frontend"
+              aria-pressed="false"
+            >
+              Frontend
+            </button>
           </div>
 
           <div class="projects" id="projects">
-            <article class="project project--featured" data-category="fullstack">
+            <article
+              class="project project--featured"
+              data-category="fullstack"
+            >
               <div class="project-media">
-                <img src="./images/projects/exam-system.webp" width="900" height="402" loading="lazy" decoding="async" alt="Home page of the Online Examination System showing Admin, Teacher and Student portals">
+                <img
+                  src="./images/projects/exam-system.webp"
+                  width="900"
+                  height="402"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Home page of the Online Examination System showing Admin, Teacher and Student portals"
+                />
               </div>
               <div class="project-body">
                 <h4>Online Examination System</h4>
                 <p>
-                  A secure full-stack exam platform with role-based access for admins, teachers and students. It supports
-                  section-wise timed exams with MCQ and descriptive questions, automatic answer saving, fullscreen
-                  enforcement and browser-violation detection to protect exam integrity.
+                  A secure full-stack exam platform with role-based access for
+                  admins, teachers and students. It supports section-wise timed
+                  exams with MCQ and descriptive questions, automatic answer
+                  saving, fullscreen enforcement and browser-violation detection
+                  to protect exam integrity.
                 </p>
                 <ul class="chips" aria-label="Technologies">
-                  <li>PHP 8.2</li><li>MySQL</li><li>JavaScript</li><li>Bootstrap</li>
+                  <li>PHP 8.2</li>
+                  <li>MySQL</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
                 </ul>
                 <div class="project-links">
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/waqasahmad422/OnlineExamanationSystem" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-github" /></svg>Source code<span class="sr-only"> (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://github.com/waqasahmad422/OnlineExamanationSystem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-github" /></svg
+                    >Source code<span class="sr-only">
+                      (opens in a new tab)</span
+                    >
                   </a>
                 </div>
               </div>
@@ -408,15 +1157,35 @@
 
             <article class="project" data-category="frontend">
               <div class="project-media">
-                <img src="./images/projects/elegencia.webp" width="900" height="402" loading="lazy" decoding="async" alt="Elegencia hotel and resort website with a booking search bar over a night photo of a luxury hotel">
+                <img
+                  src="./images/projects/elegencia.webp"
+                  width="900"
+                  height="402"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Elegencia hotel and resort website with a booking search bar over a night photo of a luxury hotel"
+                />
               </div>
               <div class="project-body">
                 <h4>Elegencia</h4>
-                <p>A luxury hotel and resort landing page with a full-width hero and a check-in, check-out and guests booking bar.</p>
-                <ul class="chips" aria-label="Technologies"><li>Frontend</li><li>Responsive UI</li></ul>
+                <p>
+                  A luxury hotel and resort landing page with a full-width hero
+                  and a check-in, check-out and guests booking bar.
+                </p>
+                <ul class="chips" aria-label="Technologies">
+                  <li>Frontend</li>
+                  <li>Responsive UI</li>
+                </ul>
                 <div class="project-links">
-                  <a class="btn btn--ghost btn--sm" href="https://elegencia-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>Live demo<span class="sr-only"> (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://elegencia-phi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-external" /></svg
+                    >Live demo<span class="sr-only"> (opens in a new tab)</span>
                   </a>
                 </div>
               </div>
@@ -424,15 +1193,35 @@
 
             <article class="project" data-category="frontend">
               <div class="project-media">
-                <img src="./images/projects/random-joke.webp" width="900" height="402" loading="lazy" decoding="async" alt="Random joke generator showing a joke in a card with a Get Joke button on a purple gradient">
+                <img
+                  src="./images/projects/random-joke.webp"
+                  width="900"
+                  height="402"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Random joke generator showing a joke in a card with a Get Joke button on a purple gradient"
+                />
               </div>
               <div class="project-body">
                 <h4>Random Joke Generator</h4>
-                <p>A small interactive app: press the button for a new joke, with a counter of how many you've generated.</p>
-                <ul class="chips" aria-label="Technologies"><li>Frontend</li><li>JavaScript</li></ul>
+                <p>
+                  A small interactive app: press the button for a new joke, with
+                  a counter of how many you've generated.
+                </p>
+                <ul class="chips" aria-label="Technologies">
+                  <li>Frontend</li>
+                  <li>JavaScript</li>
+                </ul>
                 <div class="project-links">
-                  <a class="btn btn--ghost btn--sm" href="https://waqas-random-joke.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>Live demo<span class="sr-only"> (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://waqas-random-joke.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-external" /></svg
+                    >Live demo<span class="sr-only"> (opens in a new tab)</span>
                   </a>
                 </div>
               </div>
@@ -440,18 +1229,49 @@
 
             <article class="project" data-category="frontend">
               <div class="project-media">
-                <img src="./images/projects/kbiz.webp" width="900" height="402" loading="lazy" decoding="async" alt="Kbiz business website with a dark hero section and a Get Started button">
+                <img
+                  src="./images/projects/kbiz.webp"
+                  width="900"
+                  height="402"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Kbiz business website with a dark hero section and a Get Started button"
+                />
               </div>
               <div class="project-body">
                 <h4>Kbiz Clone</h4>
-                <p>A static clone of a modern business website with a clean, structured layout and responsive page sections.</p>
-                <ul class="chips" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>Bootstrap 5</li><li>JavaScript</li></ul>
+                <p>
+                  A static clone of a modern business website with a clean,
+                  structured layout and responsive page sections.
+                </p>
+                <ul class="chips" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap 5</li>
+                  <li>JavaScript</li>
+                </ul>
                 <div class="project-links">
-                  <a class="btn btn--ghost btn--sm" href="https://kbiz-livid.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>Live demo<span class="sr-only"> (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://kbiz-livid.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-external" /></svg
+                    >Live demo<span class="sr-only"> (opens in a new tab)</span>
                   </a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/waqasahmad422/Kbiz" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-github" /></svg>Source<span class="sr-only"> code (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://github.com/waqasahmad422/Kbiz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-github" /></svg
+                    >Source<span class="sr-only">
+                      code (opens in a new tab)</span
+                    >
                   </a>
                 </div>
               </div>
@@ -459,15 +1279,36 @@
 
             <article class="project" data-category="frontend">
               <div class="project-media">
-                <img src="./images/projects/bizcell.webp" width="900" height="402" loading="lazy" decoding="async" alt="Bizcell business consulting landing page with a purple Contact Us button">
+                <img
+                  src="./images/projects/bizcell.webp"
+                  width="900"
+                  height="402"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Bizcell business consulting landing page with a purple Contact Us button"
+                />
               </div>
               <div class="project-body">
                 <h4>Bizcell Clone</h4>
-                <p>A responsive business landing page clone focused on layout, styling and modern UI design.</p>
-                <ul class="chips" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>Responsive</li></ul>
+                <p>
+                  A responsive business landing page clone focused on layout,
+                  styling and modern UI design.
+                </p>
+                <ul class="chips" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Responsive</li>
+                </ul>
                 <div class="project-links">
-                  <a class="btn btn--ghost btn--sm" href="https://apnabizcellclone.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>Live demo<span class="sr-only"> (opens in a new tab)</span>
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="https://apnabizcellclone.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-external" /></svg
+                    >Live demo<span class="sr-only"> (opens in a new tab)</span>
                   </a>
                 </div>
               </div>
@@ -477,12 +1318,23 @@
       </section>
 
       <!-- ====== Contact ====== -->
-      <section class="section contact" id="contact" tabindex="0" aria-labelledby="contact-title" data-title="Contact">
+      <section
+        class="section contact"
+        id="contact"
+        tabindex="0"
+        aria-labelledby="contact-title"
+        data-title="Contact"
+      >
         <div class="container">
-          <div class="section-title"><h2 id="contact-title">Contact Me</h2></div>
+          <div class="section-title">
+            <h2 id="contact-title">Contact Me</h2>
+          </div>
 
           <h3 class="contact-heading">Have a project or a question?</h3>
-          <p class="contact-sub">Call, message me on WhatsApp, or send an email. I'd be glad to hear from you.</p>
+          <p class="contact-sub">
+            Call, message me on WhatsApp, or send an email. I'd be glad to hear
+            from you.
+          </p>
 
           <div class="contact-info">
             <div>
@@ -498,51 +1350,112 @@
             <div>
               <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>
               <h4>Email</h4>
-              <p><a href="mailto:waqasahmad545818@gmail.com">waqasahmad545818@gmail.com</a></p>
+              <p>
+                <a href="mailto:waqasahmad545818@gmail.com"
+                  >waqasahmad545818@gmail.com</a
+                >
+              </p>
             </div>
             <div>
               <svg class="icon" aria-hidden="true"><use href="#i-globe" /></svg>
               <h4>Online</h4>
               <p>
-                <a href="https://github.com/waqasahmad422" target="_blank" rel="noopener noreferrer">GitHub</a> ·
-                <a href="https://www.linkedin.com/in/waqas-ahmad-shah/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a
+                  href="https://github.com/waqasahmad422"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+                ·
+                <a
+                  href="https://www.linkedin.com/in/waqas-ahmad-shah/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
               </p>
             </div>
           </div>
 
           <h3 class="contact-heading">Send me a message</h3>
-          <p class="contact-sub">Tell me what you're building and how I can help.</p>
+          <p class="contact-sub">
+            Tell me what you're building and how I can help.
+          </p>
 
-          <form class="contact-form" id="contact-form" data-endpoint="" data-email="waqasahmad545818@gmail.com">
+          <form
+            class="contact-form"
+            id="contact-form"
+            data-endpoint=""
+            data-email="waqasahmad545818@gmail.com"
+          >
             <div class="field">
               <label for="cf-name">Name</label>
-              <input id="cf-name" name="name" type="text" autocomplete="name" required minlength="2">
+              <input
+                id="cf-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+              />
             </div>
             <div class="field">
               <label for="cf-email">Email</label>
-              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              <input
+                id="cf-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
             </div>
             <div class="field field--full">
               <label for="cf-subject">Subject</label>
-              <input id="cf-subject" name="subject" type="text" required minlength="3">
+              <input
+                id="cf-subject"
+                name="subject"
+                type="text"
+                required
+                minlength="3"
+              />
             </div>
             <div class="field field--full">
               <label for="cf-message">Message</label>
-              <textarea id="cf-message" name="message" required minlength="10"></textarea>
+              <textarea
+                id="cf-message"
+                name="message"
+                required
+                minlength="10"
+              ></textarea>
             </div>
             <!-- spam trap: real visitors never see or fill this -->
             <div class="trap" aria-hidden="true">
-              <label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+              <label
+                >Leave this empty<input
+                  type="text"
+                  name="_gotcha"
+                  tabindex="-1"
+                  autocomplete="off"
+              /></label>
             </div>
             <div class="form-footer">
               <button type="submit" class="btn">
-                <svg class="icon" aria-hidden="true"><use href="#i-send" /></svg>Send message
+                <svg class="icon" aria-hidden="true"><use href="#i-send" /></svg
+                >Send message
               </button>
-              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              <p
+                class="form-status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
             </div>
           </form>
 
-          <p class="copyright">© <span data-year>2026</span> Waqas Ahmad Shah. Designed and built by me.</p>
+          <p class="copyright">
+            © <span data-year>2026</span> Waqas Ahmad Shah. Designed and built
+            by me.
+          </p>
         </div>
       </section>
     </main>
