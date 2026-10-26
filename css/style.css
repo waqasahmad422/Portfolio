@@ -70,10 +70,9 @@
 
 /* Accent skins (picked from the theme switcher) */
 :root[data-skin="red"] { --skin: #d3132f; --skin-light: #ff5d73; }
-:root[data-skin="orange"] { --skin: #c2410c; --skin-light: #ff8a4c; }
+:root[data-skin="orange"] { --skin: #cf4d1a; --skin-light: #ff8a4c; }
 :root[data-skin="green"] { --skin: #187a57; --skin-light: #4fd1a1; }
-:root[data-skin="blue"] { --skin: #1854b4; --skin-light: #6ea2f5; }
-:root[data-skin="pink"] { --skin: #c0158a; --skin-light: #ff6fcf; }
+:root[data-skin="blue"] { --skin: #1A1953; --skin-light: #6ea2f5; }
 
 /* ---------- 2. Base ------------------------------------------------------ */
 *,
@@ -210,36 +209,25 @@ button {
   transition: left 0.3s ease, visibility 0s;
 }
 .logo a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 20px;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  color: var(--text-900);
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 3px var(--bg-100), 0 0 0 5px var(--skin-ink),
+    0 12px 24px -10px rgba(21, 21, 60, 0.55);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s;
 }
-.logo a span {
-  font-family: var(--font-script);
-  font-size: 42px;
-  font-weight: 400;
+.logo a:hover {
+  transform: scale(1.05) rotate(-3deg);
+  box-shadow: 0 0 0 3px var(--bg-100), 0 0 0 5px var(--skin-light),
+    0 16px 28px -10px rgba(21, 21, 60, 0.65);
 }
-.logo a::before,
-.logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 0 solid var(--skin-ink);
-}
-.logo a::before {
-  left: 0;
-  bottom: 0;
-  border-width: 0 0 5px 5px;
-}
-.logo a::after {
-  right: 0;
-  top: 0;
-  border-width: 5px 5px 0 0;
+.logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .aside nav {
   margin: auto 0;
@@ -468,10 +456,9 @@ button {
   transform: translate(-50%, -60%) rotate(45deg);
 }
 .swatch--red { --c: #d3132f; }
-.swatch--orange { --c: #c2410c; }
+.swatch--orange { --c: #cf4d1a; }
 .swatch--green { --c: #187a57; }
-.swatch--blue { --c: #1854b4; }
-.swatch--pink { --c: #c0158a; }
+.swatch--blue { --c: #1A1953; }
 
 /* ---------- 6. Panels (each section is a full-height panel) -------------- */
 .section {
