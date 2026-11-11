@@ -7,7 +7,9 @@ Live: https://waqasahmadshah.vercel.app/
 
 ```
 index.html        all content (sections: home, about, services, portfolio, contact)
+css/noscript.css  fallback layout when JavaScript is off
 css/style.css     tokens, components, responsive rules, dark mode, accent skins
+js/theme-init.js applies the saved theme before first paint (loaded in <head>)
 js/main.js        section navigation, menu, theme/accent, typing effect, filters, contact form
 fonts/            self-hosted Plus Jakarta Sans + Clicker Script (latin, woff2)
 images/           optimized WebP photos and project screenshots, favicon, social share image
@@ -17,7 +19,7 @@ vercel.json       security and cache headers
 
 ## Editing content
 
-- **Text, links, skills, timeline:** edit `index.html`. Skill bars use `style="--level: 90%"` plus `aria-valuenow`.
+- **Text, links, skills, timeline:** edit `index.html`. Skill bars use a level class (e.g. `<span class="lv-90">`, defined in `css/style.css`) plus `aria-valuenow`; to add a new level, add a matching `.lv-NN` rule.
 - **Add a project:** copy an `<article class="project">` block, set `data-category="frontend"` or `"fullstack"`,
   and add a 900px-wide WebP screenshot to `images/projects/`.
 - **Age:** calculated automatically from `BIRTH` in `js/main.js`.
@@ -26,7 +28,11 @@ vercel.json       security and cache headers
 
 ## Contact form
 
-By default the form opens the visitor's email app with the message filled in (no server needed).
+A second button, **Send on WhatsApp**, opens WhatsApp with the message pre-filled. Change the number in `data-whatsapp` (country code, no `+`).
+
+The form sends messages straight to Gmail through FormSubmit (`data-endpoint` on `<form id="contact-form">`).
+The very first message triggers an activation email: open it and click **Activate Form** once.
+If `data-endpoint` is left empty, the form falls back to opening the visitor's email app with the message filled in (no server needed).
 To send messages in the background instead, create a form at Formspree or Web3Forms and put its URL in
 `data-endpoint` on `<form id="contact-form">`.
 

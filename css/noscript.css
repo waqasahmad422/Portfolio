@@ -1,0 +1,15 @@
+/* Fallback layout when JavaScript is disabled (loaded via <noscript> in index.html) */
+.aside,
+.nav-toggler,
+.switcher {
+  display: none;
+}
+.project-media img {
+  opacity: 1;
+}
+.section {
+  position: static;
+  visibility: visible;
+  padding: 0 30px;
+  min-height: 0;
+}

@@ -37,21 +37,7 @@
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
 
     <!-- Apply saved theme before first paint (prevents a light/dark flash) -->
-    <script>
-      (function () {
-        try {
-          var d = document.documentElement;
-          var theme = localStorage.getItem("theme");
-          var skin = localStorage.getItem("skin");
-          if (!theme)
-            theme = matchMedia("(prefers-color-scheme: dark)").matches
-              ? "dark"
-              : "light";
-          d.dataset.theme = theme;
-          if (skin) d.dataset.skin = skin;
-        } catch (e) {}
-      })();
-    </script>
+    <script src="./js/theme-init.js"></script>
 
     <link
       rel="preload"
@@ -90,24 +76,7 @@
         ]
       }
     </script>
-    <noscript>
-      <style>
-        .aside,
-        .nav-toggler,
-        .switcher {
-          display: none;
-        }
-        .project-media img {
-          opacity: 1;
-        }
-        .section {
-          position: static;
-          visibility: visible;
-          padding: 0 30px;
-          min-height: 0;
-        }
-      </style>
-    </noscript>
+    <noscript><link rel="stylesheet" href="./css/noscript.css" /></noscript>
   </head>
 
   <body>
@@ -119,7 +88,7 @@
       xmlns="http://www.w3.org/2000/svg"
       width="0"
       height="0"
-      style="position: absolute"
+      class="sprite"
       aria-hidden="true"
       focusable="false"
     >
@@ -804,7 +773,7 @@
                     aria-valuemax="100"
                     aria-valuenow="90"
                   >
-                    <span style="--level: 90%"></span>
+                    <span class="lv-90"></span>
                   </div>
                 </div>
                 <div class="skill">
@@ -817,7 +786,7 @@
                     aria-valuemax="100"
                     aria-valuenow="85"
                   >
-                    <span style="--level: 85%"></span>
+                    <span class="lv-85"></span>
                   </div>
                 </div>
                 <div class="skill">
@@ -832,7 +801,7 @@
                     aria-valuemax="100"
                     aria-valuenow="80"
                   >
-                    <span style="--level: 80%"></span>
+                    <span class="lv-80"></span>
                   </div>
                 </div>
 
@@ -848,7 +817,7 @@
                     aria-valuemax="100"
                     aria-valuenow="75"
                   >
-                    <span style="--level: 75%"></span>
+                    <span class="lv-75"></span>
                   </div>
                 </div>
                 <div class="skill">
@@ -861,7 +830,7 @@
                     aria-valuemax="100"
                     aria-valuenow="60"
                   >
-                    <span style="--level: 60%"></span>
+                    <span class="lv-60"></span>
                   </div>
                 </div>
                 <div class="skill">
@@ -876,7 +845,7 @@
                     aria-valuemax="100"
                     aria-valuenow="50"
                   >
-                    <span style="--level: 50%"></span>
+                    <span class="lv-50"></span>
                   </div>
                 </div>
               </div>
@@ -1430,8 +1399,9 @@
           <form
             class="contact-form"
             id="contact-form"
-            data-endpoint=""
+            data-endpoint="https://formsubmit.co/ajax/waqasahmad545818@gmail.com"
             data-email="waqasahmad545818@gmail.com"
+            data-whatsapp="923209955837"
           >
             <div class="field">
               <label for="cf-name">Name</label>
@@ -1442,6 +1412,7 @@
                 autocomplete="name"
                 required
                 minlength="2"
+                placeholder="Your Name"
               />
             </div>
             <div class="field">
@@ -1452,6 +1423,7 @@
                 type="email"
                 autocomplete="email"
                 required
+                placeholder="example@gmail.com"
               />
             </div>
             <div class="field field--full">
@@ -1462,6 +1434,7 @@
                 type="text"
                 required
                 minlength="3"
+                placeholder="Subject"
               />
             </div>
             <div class="field field--full">
@@ -1471,8 +1444,13 @@
                 name="message"
                 required
                 minlength="10"
+                placeholder="Your Message"
               ></textarea>
             </div>
+            <!-- FormSubmit options: email subject, no captcha page, table layout -->
+            <input type="hidden" name="_subject" value="New message from your portfolio" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <!-- spam trap: real visitors never see or fill this -->
             <div class="trap" aria-hidden="true">
               <label
@@ -1487,6 +1465,10 @@
               <button type="submit" class="btn">
                 <svg class="icon" aria-hidden="true"><use href="#i-send" /></svg
                 >Send message
+              </button>
+              <button type="button" class="btn btn--ghost" id="wa-send">
+                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg
+                >Send on WhatsApp
               </button>
               <p
                 class="form-status"

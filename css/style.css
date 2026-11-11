@@ -119,6 +119,9 @@ button {
   outline-offset: 3px;
   border-radius: 4px;
 }
+.sprite {
+  position: absolute;
+}
 .icon {
   width: 1.15em;
   height: 1.15em;
@@ -712,6 +715,24 @@ button {
 .about.active .skill-bar span,
 .about.back-section .skill-bar span {
   width: var(--level);
+}
+.skill-bar .lv-50 {
+  --level: 50%;
+}
+.skill-bar .lv-60 {
+  --level: 60%;
+}
+.skill-bar .lv-75 {
+  --level: 75%;
+}
+.skill-bar .lv-80 {
+  --level: 80%;
+}
+.skill-bar .lv-85 {
+  --level: 85%;
+}
+.skill-bar .lv-90 {
+  --level: 90%;
 }
 .learning {
   margin-top: 34px;

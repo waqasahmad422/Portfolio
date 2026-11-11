@@ -270,7 +270,7 @@
 
   /* ---------- 8. Contact form -------------------------------------------- */
   // Two modes:
-  //  • data-endpoint="https://formspree.io/f/xxxx" (or Web3Forms etc.) → sends in the background.
+  //  • data-endpoint="https://formsubmit.co/ajax/you@gmail.com" (or Formspree, Web3Forms) → sends in the background.
   //  • empty (default) → opens the visitor's email app with the message filled in.
   const form = $("#contact-form");
   const statusEl = $("#form-status");
@@ -288,6 +288,7 @@
     const endpoint = form.dataset.endpoint.trim();
 
     if (endpoint) {
+      data.delete("_gotcha"); // trap field is only for the check above
       submitBtn.disabled = true;
       setStatus("Sending…");
       try {
@@ -311,5 +312,21 @@
     const href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(data.get("subject"))}&body=${encodeURIComponent(body)}`;
     setStatus("Opening your email app…", "success");
     window.location.href = href;
+  });
+
+  // "Send on WhatsApp": opens WhatsApp (app or web) with the message already written.
+  // The visitor only has to press Send, so it arrives in your WhatsApp chat.
+  $("#wa-send").addEventListener("click", () => {
+    if (!form.reportValidity()) return; // show the normal "required" hints
+    const data = new FormData(form);
+    const text =
+      `*New message from your portfolio*\n\n` +
+      `*Name:* ${data.get("name")}\n` +
+      `*Email:* ${data.get("email")}\n` +
+      `*Subject:* ${data.get("subject")}\n\n` +
+      `${data.get("message")}`;
+    const url = `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener");
+    setStatus("Opening WhatsApp… press Send there to deliver your message.", "success");
   });
 })();
